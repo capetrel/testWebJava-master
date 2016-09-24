@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Page description goes here" />
+
+	<title>Hawthorne &mdash; About</title>
+
+<link  href="../static/css/core.css" th:href="@{css/core.css}" rel="stylesheet" media="screen" />
+<link href="../static.css/css/font-awesome.min.css" th:href="@{css/font-awesome.min.css}" rel="stylesheet" media="screen" />
+
+</head>
+<body>
+
+<div class="top-border"></div>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 small-centered columns">
+		<header>		
+			<h1><a href="/index">Essai site css et js</a></h1>
+			<h2><a href="/index">Design &amp; Art Direction</a></h2>
+			<a href="/greeting">retour à greeting</a>
+			<!--
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="Your Name Here" /></a>
+			</div>
+			-->
+		</header>
+	</div>
+	<div class="small-12 medium-12 large-12 small-centered columns">
+		<nav>
+			<ul class="inline-list-custom">
+				<li><a href="/index">Selected Work</a></li>
+				<li><a href="/about" class="current">About</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-12 medium-7 large-7 columns">
+		<h2>About Page Header</h2>
+		<p>
+			Check out the <a href="http://www.typeandgrids.com/support" target="_blank">Getting Started Guide and FAQ <i class="fa fa-external-link"></i></a> for lots of helpful tips. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed lacus id sem pellentesque imperdiet. Morbi magna arcu, aliquam sit amet arcu id, feugiat ultrices felis. Aliquam laoreet rutrum diam, eget mattis odio imperdiet in. Quisque in felis et neque fermentum volutpat.
+		</p>
+
+		<h3>Resultat</h3>
+
+		<p th:text="'Nom: ' + ${about.nom}" />
+		<p th:text="'Prenom: ' + ${about.prenom}" />
+		<a href="/about">Submit another message</a>
+		<br />
+		
+		<blockquote>
+			<p>&#8220;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ante arcu, quis auctor sapien. Morbi magna leo, dapibus a pulvinar et, pharetra scelerisque felis. Mauris massa magna, gravida vitae convallis sagittis, sagittis ac ipsum. Integer arcu justo, vehicula vel accumsan ac, venenatis in massa. Curabitur in dui in urna interdum ullamcorper. Pellentesque ut imperdiet libero.&#8221;
+			<cite>Carrie Brownstein</cite></p>
+		</blockquote>
+	</div>
+	<div class="small-12 medium-5 large-5 columns">
+		<p>
+			<img src="img/about-photo.png" alt="Your Name" />
+		</p>
+		<div class="lined-list">
+			<ul>
+				<li><strong>Location:</strong> Portland, OR</li>
+				<li><strong>Email:</strong> <a href="mailto:hello@yourname.com">hello@yourname.com</a></li>
+				<li><strong>Résumé:</strong> <a th:href="@{resume.pdf}" target="_blank">resume.pdf</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">
+		<footer>
+			<ul>
+				<li>&copy; 2014 <a href="index.html">Your Name Here</a>. All rights reserved.</li>
+				<li><a href="mailto:hello@yourname.com"><i class="fa fa-envelope-o"></i> hello@yourname.com</a></li>
+
+				
+			</ul>
+			<div class="social-icons">
+				<a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+				<a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+			</div>
+		</footer>
+	</div>
+</div>
+
+<script src="../static.css/js/jquery.min.js" th:href="@{js/jquery.min.js}"></script>
+<script src="../static.css/js/jquery.min.js" th:href="@{js/jquery.min.js}"></script>
+<script src="../static.css/js/hawthorne.js" th:href="@{js/hawthorne.js}"></script>
+
+</body>
+</html>
